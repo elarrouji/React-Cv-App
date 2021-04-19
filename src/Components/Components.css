@@ -1,0 +1,276 @@
+.sectionContainer {
+    width: 80%;
+    border: 3px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-family: cursive;
+}
+
+input {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 50px;
+    border: none;
+    border-bottom: 3px solid black;
+    background-color: gray;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    opacity: 0.7;
+}
+
+
+label {
+    width: 100px;
+}
+
+textarea {
+    height: 200px;
+    width: 80%;
+    background-color: gray;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    line-height: 25px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.item {
+    border: 2px solid black;
+    padding-top: 50px;
+    width: 90%;
+    margin: auto;
+    border-left: none;
+    border-right: none;
+}
+
+.addBtn {
+    height: 50px;
+    width: 150px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dltBtn {
+    height: 50px;
+    width: 150px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cvGeneral {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    
+}
+
+.fullName {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bolder;
+    background-color: #d8e3e7;
+}
+
+.firstName {
+    color: #126e82;
+}
+
+.lastName {
+    color: #132c33;
+}
+
+.contactDiv {
+    width: 50%;
+    height: 100%;
+    background-color: #132c33;
+    display: flex;
+    flex-direction: column;
+}
+
+.phoneDiv {
+    display: flex;
+    height: 30%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.emailDiv {
+    display: flex;
+    height: 30%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contactSpan {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #126e82;
+}
+
+.phoneSpan, .emailSpan {
+    color: #51c4d3;
+    width: 20%;
+    font-size: 20px;
+    font-weight: 700;
+} 
+
+.phoneInput, .emailInput {
+    color: #d8e3e7;
+    width: 60%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cvSummary {
+    background-color: #d8e3e7;
+    text-align: center;
+    border-top: 3px solid #132c33;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 50px 50px 50px;
+}
+
+.summaryTitle {
+    text-decoration: underline #132c33;
+    margin-bottom: 40px;
+}
+
+.summaryInput {
+    font-size: 20px;
+    font-family: monospace;
+    margin: 50px;
+    margin-bottom: 100px;
+    color: #132c33;
+}
+
+.cvEducation {
+    background-color: #51c4d3;
+    width: 100%;
+}
+
+.educationItem {
+    width: 70%;
+    background-color: #d8e3e7;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.diplomaDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 700;
+    height: 50%;
+    align-items: center;
+}
+
+.diplomaSpan {
+    margin-right: 20px;
+}
+
+.schoolDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 700;
+    height: 50%;
+    margin-top: 20px;
+}
+
+.schoolSpan {
+    margin-right: 20px;
+}
+
+.educationTitle {
+    color: #132c33;
+    text-decoration: underline #126e82;
+    margin: 30px 0;
+}
+
+.cvExperience {
+    background-color: #132c33;
+    width: 100%;
+}
+
+.expItem {
+    width: 70%;
+    background-color: #d8e3e7;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.positionDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 700;
+    height: 50%;
+    align-items: center;
+}
+
+.positionSpan {
+    margin-right: 20px;
+}
+
+.companyDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 700;
+    height: 50%;
+    margin-top: 20px;
+}
+
+
+
+.expTitle {
+    color: #d8e3e7;
+    text-decoration: underline #51c4d3;
+    margin: 30px 0;
+}
+

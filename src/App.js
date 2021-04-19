@@ -1,25 +1,48 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+// eslint-disable-next-line no-unused-vars
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Experience from './Components/Experience';
+import GeneralInfo from './Components/GeneralInfo';
+import EducationSection from './Components/EducationSection';
+import Summary from './Components/Summary';
+
+
+class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      submitted: false,
+    }
+
+  }
+
+  submit = () => {
+    this.setState({
+      submitted: !this.state.submitted,
+    })
+  }
+
+  
+  render() {
+        let btnElement = "";
+        if (!this.state.submitted) {
+          btnElement = <button className="submit" onClick={this.submit}>Submit</button>;
+        } else {
+          btnElement = <button className="edit" onClick={this.submit}>Edit</button>
+        }
+        return (
+          <div className="container">
+            <GeneralInfo submitted={this.state.submitted}/>
+            <Summary submitted={this.state.submitted}/>
+            <EducationSection submitted={this.state.submitted}/>
+            <Experience submitted={this.state.submitted}/>
+            {btnElement}
+          </div>
+        );
+  }
+  
 }
 
 export default App;
