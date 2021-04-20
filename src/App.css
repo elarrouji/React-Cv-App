@@ -1,9 +1,18 @@
 .container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     box-sizing: border-box;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 900px) {
+    .container {
+        width: 60%;
+        margin: auto;
+    }
 }
 
 .submit {
@@ -16,11 +25,6 @@
     font-size: 20px;
     font-weight: 600;
 }
-
-.cvContainer {
-    display: grid;
-    grid-template-columns: 35vw 65vw;
-} 
 
 .edit {
     height: 70px;

@@ -8,7 +8,10 @@
     align-content: center;
     margin-top: 50px;
     text-align: center;
+    border-radius: 5px;
 }
+
+
 
 h1 {
     font-family: cursive;
@@ -86,18 +89,17 @@ textarea {
 .cvGeneral {
     width: 100%;
     height: 25vh;
-    display: flex;
-    
+    display: flex;  
 }
 
 .fullName {
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bolder;
     background-color: #d8e3e7;
 }
@@ -111,7 +113,7 @@ textarea {
 }
 
 .contactDiv {
-    width: 50%;
+    width: 60%;
     height: 100%;
     background-color: #132c33;
     display: flex;
@@ -123,6 +125,8 @@ textarea {
     height: 30%;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
+
 }
 
 .emailDiv {
@@ -130,6 +134,7 @@ textarea {
     height: 30%;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
 }
 
 .contactSpan {
@@ -274,3 +279,9 @@ textarea {
     margin: 30px 0;
 }
 
+@media only screen and (min-width: 900px) {
+    .sectionContainer {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+}
