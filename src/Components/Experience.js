@@ -19,8 +19,8 @@ function Company(props) {
 function Period(props) {
     return (
         <div>
-            <input onChange={props.handleFrom} value={props.from} placeholder="Enter The Year Your Started" type="number"></input>
-            <input onChange={props.handleTo} value={props.to} placeholder="Enter The Year You Finished" type="number"></input>
+            <input onChange={props.handleFrom} value={props.from} placeholder="Enter The Year Your Started" type="text"></input>
+            <input onChange={props.handleTo} value={props.to} placeholder="Enter The Year You Finished" type="text"></input>
         </div>
     )
 }

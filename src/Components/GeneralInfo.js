@@ -20,7 +20,7 @@ const LastName = (props) => {
 const PhoneNumber = (props) => {
     return (
         <div>
-            <input onChange={props.handlePhoneChange} value={props.phoneNumber} type="number" placeholder="Enter Your Number" ></input>
+            <input onChange={props.handlePhoneChange} value={props.phoneNumber} type="text" placeholder="Enter Your Number" ></input>
         </div>
     )
 }

@@ -29,8 +29,8 @@ const Major = (props) => {
 const Period = (props) => {
   return (
     <div>
-      <input onChange={props.handleFrom} value={props.from} type="number" placeholder="Enter The Year You Started"></input>
-      <input onChange={props.handleTo} value={props.to} type="number" placeholder="Enter The Year You Finished"></input>
+      <input onChange={props.handleFrom} value={props.from} type="text" placeholder="Enter The Year You Started"></input>
+      <input onChange={props.handleTo} value={props.to} type="text" placeholder="Enter The Year You Finished"></input>
     </div>
   )
 } 
