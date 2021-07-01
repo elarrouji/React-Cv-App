@@ -71,6 +71,7 @@ class GeneralInfo extends Component {
     }
     
     render() {
+        
         if (!this.props.submitted) {
             
             return (
